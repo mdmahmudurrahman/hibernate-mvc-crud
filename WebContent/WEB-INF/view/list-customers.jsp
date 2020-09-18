@@ -4,11 +4,16 @@
 <html>
 	<head>
 		<title>Customer List</title>
+		
+		<!-- Reference your style sheet -->
+		<link type="text/css" 
+		      rel="stylesheet"
+		      href="${pageContext.request.contextPath}/resources/css/style.css" />
 	</head>
 	<body>
 		<h1>List customers</h1>
 		
-		<div id="wraper">
+		<div id="wrapper">
 			<div id="header">
 				<h2>Customer relationship manager</h2>
 			</div>
