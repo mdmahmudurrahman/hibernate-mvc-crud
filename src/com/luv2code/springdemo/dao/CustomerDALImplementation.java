@@ -36,4 +36,12 @@ public class CustomerDALImplementation implements CustomerDAO {
 		Customer customer = currentSession.get(Customer.class, theId);
 		return customer;
 	}
+
+	@Override
+	public void deleteCustomer(int theId) {
+		Session currentSession = sessionFactory.getCurrentSession();
+		Query theQuery = currentSession.createQuery("delete from Customer where id=:customerId");
+		theQuery.setParameter("customerId", theId);
+		theQuery.executeUpdate();
+	}
 }
