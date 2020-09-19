@@ -27,6 +27,7 @@
 				<h2>Save customer</h2>
 				
 				<form:form action="saveCustomer" modelAttribute="customer" method="POST">
+				    <form:hidden path="id" />
 					<table>
 						<tr>
 							<td>First name</td>
